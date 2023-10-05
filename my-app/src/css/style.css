@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.name {
+  margin: 10px;
+}
+
+.start-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh
+}
+
+.start-button {
+  background-color: #3498db; /* Background color */
+  color: #fff; /* Text color */
+  font-size: 24px; /* Font size */
+  padding: 15px 30px; /* Padding */
+  border: none; /* Remove the default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Hover effect */
+.start-button:hover {
+  background-color: #2980b9; /* Darker background color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Focus effect */
+.start-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
