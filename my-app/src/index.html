@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Pass</title>
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
@@ -28,11 +25,18 @@
     <h1 class="name"><u>E-Pass</u></h1>
 
     <div class="start-button-div">
-      <button class="start-button" onclick="window.location.href='#'">New Pass</button>
+      <button class="start-button" onclick="window.location.href='passes/index.html'">New Pass</button>
+    </div>
+
+    <div id="loading-screen" style="display: none;">
+      <div class="spinner"></div>
+      <p>Loading...</p>
     </div>
 
     <div class="admin-login">
       <a href="#">Admin & Faculty Login</a>
     </div>
+
+    <script src="loadingScren.js" defer async></script>
   </body>
 </html>
