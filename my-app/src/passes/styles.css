@@ -1,18 +1,21 @@
 html,
 body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .name {
-  margin: 1rem;
+    margin: 1rem;
+    grid-area: header;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     width: 100%;
+    grid-area: dropdown;
+    padding: 1.5rem 0;
 }
 
 .dropdown select {
@@ -38,4 +41,14 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-  
+
+.header-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header dropdown dropdown';
+}  
+
+.passes-grid-container {
+    display: grid;
+}
+
