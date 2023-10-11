@@ -10,45 +10,33 @@ body {
     grid-area: header;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    grid-area: dropdown;
-    padding: 1.5rem 0;
-}
-
-.dropdown select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-.dropdown select:focus {
-    outline: none;
-    border-color: #3498db;
-}
-
-.dropdown select option {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropdown ::placeholder {
-    padding: 10px;
-    cursor: pointer;
+.pass-textbox {
+    grid-area: pass-textbox;
 }
 
 .header-grid-container {
     display: grid;
     grid-template-areas: 
-    'header header dropdown dropdown';
-}  
+    'header header pass-textbox';
+    margin-bottom: 74px;
+} 
+
+.pass-item {
+    grid-area: pass;
+}
+
+.passes-grid-container > div{
+    background-color: rgba(255,255,255,0.5);
+    padding: 190px 0px;
+}
 
 .passes-grid-container {
     display: grid;
+    grid-template-areas:
+    'pass pass pass'
+    'pass pass pass';
+    gap: 10px;
+    background-color: grey;
+    padding: 20px;
 }
 
