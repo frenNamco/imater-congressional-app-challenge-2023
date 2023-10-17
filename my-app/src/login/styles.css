@@ -15,14 +15,16 @@ body {
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
+    gap: 10px;
 }
 
 .textbox {
     flex: auto;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -30,3 +32,20 @@ body {
 .textbox:focus {
     box-shadow: 0 0 4px #000;
 }
+
+#login-button {
+    background-color: #3498db; /* Background color */
+    color: #fff; /* Text color */
+    font-size: 1.5rem; /* Font size */
+    padding: 1rem 2rem; /* Padding */
+    border: none; /* Remove the default button border */
+    border-radius: 0.5rem; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  #login-button:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
