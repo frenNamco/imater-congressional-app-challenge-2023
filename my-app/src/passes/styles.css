@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-areas: 
     'header header pass-textbox';
-    margin-bottom: 74px;
+    margin-bottom: 7vh;
 } 
 
 .pass-item {
