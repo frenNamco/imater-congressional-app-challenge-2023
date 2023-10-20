@@ -1,25 +1,31 @@
 const textboxes = document.getElementsByClassName("textbox");
 const button = document.getElementById("login-button");
-
 const emailTextbox = textboxes[0];
 const passwordTextbox = textboxes[1];
 
-const emails = ["fake4625@gmail.com", "jlope@imater.org", "test@test.com"];
-const passwords = ["littlebabyman", "ballsman", "test"];
+//const emails = ["fake4625@gmail.com", "jlope@imater.org", "test@test.com"];
+//const passwords = ["littlebabyman", "ballsman", "test"]; 
+
+//Get the data from the teacher.json file
+let teacherJSON; 
+fetch('../data/teacher.json').then(response => response.json()).then(data => {
+    teacherJSON = data;
+}).catch(error => {
+    console.error('Error:', error);
+})
 
 button.addEventListener("click", () => {
     let inputEmail = emailTextbox.value;
     let inputPass = passwordTextbox.value;
     let emailInvalid = true;
     let passInvalid = true;
-    let emailIndex = -1;
-    let passIndex = -1;
+    let index = -1;
 
-    for (let i = 0; i < emails.length; i++) {
-        const email = emails[i];
+    for (let i = 0; i < teacherJSON.teachers.length; i++) {
+        const email = teacherJSON.teachers[i].email;
       
         if (email === inputEmail) {
-            emailIndex = i;
+            index = i;
             emailInvalid = false;
             break;
         } else {
@@ -27,8 +33,16 @@ button.addEventListener("click", () => {
         }
     }
 
-    for (let i = 0; i < passwords.length; i++) {
-        const password = passwords[i];
+    let pass = teacherJSON.teachers[index].pass;
+
+    if (pass === inputPass) {
+        passInvalid = false;
+    } else {
+        passInvalid = true;
+    }
+
+    /*for (let i = 0; i < teacherJSON.teachers.length; i++) {
+        const password = teacher;
       
         if (password === inputPass) {
             passIndex = i;
@@ -37,12 +51,13 @@ button.addEventListener("click", () => {
         } else {
             passInvalid = true;
         }
-    }
+    }*/
 
-    if ((emailIndex == passIndex) && !(emailInvalid || passInvalid)){
+    if (!(emailInvalid || passInvalid)){
         window.location.href = "https://www.merriam-webster.com/dictionary/victory";
 
     } else {
+        alert("Invalid email or password");
         emailTextbox.value = "";
         emailTextbox.style.border = '1px solid red';
 
@@ -50,3 +65,4 @@ button.addEventListener("click", () => {
         passwordTextbox.style.border = '1px solid red';
     }
 })
+
