@@ -3,9 +3,6 @@ const button = document.getElementById("login-button");
 const emailTextbox = textboxes[0];
 const passwordTextbox = textboxes[1];
 
-//const emails = ["fake4625@gmail.com", "jlope@imater.org", "test@test.com"];
-//const passwords = ["littlebabyman", "ballsman", "test"]; 
-
 //Get the data from the teacher.json file
 let teacherJSON; 
 fetch('../data/teacher.json').then(response => response.json()).then(data => {
@@ -41,20 +38,12 @@ button.addEventListener("click", () => {
         passInvalid = true;
     }
 
-    /*for (let i = 0; i < teacherJSON.teachers.length; i++) {
-        const password = teacher;
-      
-        if (password === inputPass) {
-            passIndex = i;
-            passInvalid = false;
-            break;
-        } else {
-            passInvalid = true;
-        }
-    }*/
-
     if (!(emailInvalid || passInvalid)){
-        window.location.href = "https://www.merriam-webster.com/dictionary/victory";
+        window.location.href = "pass management/index.html";
+
+        const teacherIndex = index.toString();
+
+        localStorage.setItem('active', teacherIndex);
 
     } else {
         alert("Invalid email or password");
