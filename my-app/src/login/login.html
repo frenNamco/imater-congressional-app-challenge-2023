@@ -18,26 +18,39 @@
 
     <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <meta name="theme-color" content="#31d53d" />
   </head>
   <body>
+    
 
-    <img class="willie" src="assets\imgs\WillieTheElephant.jpeg">
 
+    <div class="header-container">
 
-    <h1 class="name">E-Pass</h1>
+      <div class="logo-container">
+        <img class="logo" src="WillieTheElephant.jpeg">
+      </div>
+      
+      <div class="name container">
+        <h1 class="name">E- Pass</h1>
+      </div>
+      
+    </div>  
 
-    <div class="start-button-div">
-      <button id="start-button" onclick="window.location.href='passes/hall-passes.html'">Hall Passes</button>
+    <div class="textbox-flex-container">
+      <div class="textbox-flex">
+        
+        <h1 class="Admin"><u>Admin & Faculty Login</u></h1>  
+
+        <input class="textbox" type="email" name="Email" placeholder="Email" required/>
+  
+        <input class="textbox" type="password" name="Password" placeholder="Password" required/>
+  
+        <button id="login-button">Login</button>
+      </div>
     </div>
-
-
-
-    <div class="admin-login">
-      <a href="login/login.html">Admin & Faculty Login</a>
-    </div>
-
+    
+    <script src="loginFunc.js"></script>
     
   </body>
 </html>

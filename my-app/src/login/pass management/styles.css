@@ -8,8 +8,6 @@ body{
 
 }
 
-
-
 .name {
     text-align: center;
     color: #3498db;
@@ -22,6 +20,38 @@ body{
     width: 100px;
     border: 4px solid black;
     border-radius: 100px;
+}
+
+#class-passes {
+    display: grid;
+    grid-template-areas: 
+    '';
+    margin-bottom: 1vh;
+    align-items: center;
+} 
+
+#passdude-1 {
+    grid-area: image-1; 
+}
+
+#passdude-2 {
+    grid-area: image-2;
+}
+
+#passdude-3 {
+    grid-area: image-3;
+}
+
+#passdude-4 {
+    grid-area: image-4;
+}
+
+#passdude-5 {
+    grid-area: image-5;
+}
+
+#passdude-6 {
+    grid-area: image-6;
 }
 
 

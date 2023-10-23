@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E-Pass</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="my-app/src/assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+
+    <div class="header-grid-container">
+      <h1 class="name">Hall Passes</h1>
+
+      <input type="text" class="pass-textbox" id="pass-textbox" placeholder="Enter Class ID Here"/>
+      <button id="enter-button">Enter</button>
+    </div>
+
+    <h3 id="teacher-name" style="display: none;">[Teacher]'s class</h3>
+
+    <div class="passes-grid-container">
+        <div class="passes-grid-row-1">
+          <div class="pass-item-1"></div>
+          <div class= "pass-item-2"></div>
+          <div class="pass-item-3"></div>
+        </div>
+
+        <div class="passes-grid-row-2">
+          <div class="pass-item-4"></div>
+          <div class="pass-item-5"></div>
+          <div class="pass-item-6"></div>  
+        </div>
+        
+        
+    </div>
+    
+    <script src="passFunc.js"></script>
+  </body>
+</html>
