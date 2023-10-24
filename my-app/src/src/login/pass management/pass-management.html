@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Pass</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    
+
+
+    <div class="header-container">
+
+      <div class="logo-container">
+        <img class="logo" src="../../assets/imgs/WillieTheElephant.jpeg">
+      </div>
+      
+      <div class="name-container">
+        <h1 class="name">Manage Passses</h1>
+      </div>
+      
+    </div>  
+
+    <div id="welcome-subheadder">
+      <h4 id="welcome-text">Welcome [teacher]</h4>
+
+      <input id="room-code-input" type="number" name="Room Code" min="1" max="500" step="10" value="100" placeholder="Set Room Code"/>
+
+      <button id="setRoomCode">Set Room Code</button>
+    </div>
+
+    <h2>Class Passes</h2>
+    
+    <div id="class-passes">
+      
+      <div class="student-pass-container">
+        <img id="passdude-1" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+
+      <div class="student-pass-container">
+        <img id="passdude-2" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+
+      <div class="student-pass-container">
+        <img id="passdude-3" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+
+      <div class="student-pass-container">
+        <img id="passdude-4" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+
+      <div class="student-pass-container">
+        <img id="passdude-5" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+
+      <div class="student-pass-container">
+        <img id="passdude-6" src="../../assets/imgs/e-pass_dude.png">
+        <p>Student</p>
+      </div>
+    </div>
+
+    <script src="passManage.js"></script>    
+  </body>
+</html>

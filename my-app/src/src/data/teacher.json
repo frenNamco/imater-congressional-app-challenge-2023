@@ -1,0 +1,25 @@
+{
+    "teachers": [
+        {
+            "name": "John Lopez",
+            "email": "fake4625@gmail.com",
+            "pass": "littlebabyman",
+            "roomCode": null,
+            "active": false
+        },
+        {
+            "name": "Juan Lopez",
+            "email": "jlopez@imater.org",
+            "pass": "ballsman",
+            "roomCode": null,
+            "active": false
+        },
+        {
+            "name": "Mr. Test",
+            "email": "test@test.com",
+            "pass": "test",
+            "roomCode": null,
+            "active": false
+        }
+    ]
+}
