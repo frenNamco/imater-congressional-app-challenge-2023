@@ -1,6 +1,7 @@
 {
     
-    "students": [
+    "students": 
+    [
         {
             "name": "Student 1",
             "id": "0000001"

@@ -1,0 +1,45 @@
+body{
+    background-color: pink;
+}
+
+.header-container{
+    display: flex;
+    height: 120px;
+
+}
+
+.name {
+    text-align: center;
+    color: #3498db;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+.logo{
+    width: 100px;
+    border: 4px solid black;
+    border-radius: 100px;
+}
+
+#pass-creator {
+    display: none;   
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px 500px;
+}
+
+#student-name {
+    flex: auto;
+    text-align: center;
+}
+
+#location-dropdown, #specific-location-dropdown {
+    width: auto;
+    height: 30px;   
+}
+ 
+
+
+

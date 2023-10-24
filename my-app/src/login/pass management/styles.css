@@ -23,12 +23,21 @@ body{
 }
 
 #class-passes {
-    display: grid;
+    display: none;
     grid-template-areas: 
-    '';
+    'header header header header header header'
+    'image-1 image-2 image-3 image-4 image-5 image-6';
     margin-bottom: 1vh;
-    align-items: center;
+    gap: 50px;
 } 
+
+#class-passes-header {
+    grid-area: header;
+}
+
+.student-pass-container {
+    background-color: white;
+}
 
 #passdude-1 {
     grid-area: image-1; 
@@ -54,7 +63,10 @@ body{
     grid-area: image-6;
 }
 
-
+#passdude-1, #passdude-2, #passdude-3, #passdude-4, #passdude-5, #passdude-6 {
+    width: 50px;
+    height: 50px;
+}
 
 
 
