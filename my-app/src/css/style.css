@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400&display=swap');
+
 body{
   background-color: rgb(243, 178, 178);
 }
@@ -15,7 +17,7 @@ body{
   margin: 1rem;
   text-align: center;
   font-size: 4em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Azeret Mono', monospace;
   color: #073e62;
   
   
@@ -32,7 +34,7 @@ body{
   background-color: #073e62; /* Background color */
   color: #fff; /* Text color */
   font-size: 1.9rem; /* Font size */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Azeret Mono', monospace;
   padding: 1.8rem 15rem; /* Padding */
   border: none; /* Remove the default button border */
   border-radius: 0.5rem; /* Add rounded corners */
@@ -56,10 +58,12 @@ body{
   justify-content: center;
   height: 100px;
   align-items:flex-end;
-
-
+  font-family: 'Azeret Mono', monospace;
 }
 
+a{
+  color: black;
+}
 
 
 

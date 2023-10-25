@@ -36,7 +36,7 @@ fetch('../../data/teacher.json').then(response => response.json()).then(data => 
 
 roomCodeButton.addEventListener("click", () => {
     roomCode = roomCodeInput.value;
-    classPasses.style.display = "grid";
+    classPasses.style.display = "flex";
     
     localStorage.setItem(roomCode.toString(), teacherIndex.toString());
     alert("Room code has been set: " + roomCode + "\n" + 

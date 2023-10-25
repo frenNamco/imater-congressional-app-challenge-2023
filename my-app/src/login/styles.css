@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400&display=swap');
+
 body{
     background-color: pink;
 }
@@ -15,6 +17,7 @@ body{
     color: #3498db;
     font-size: 50px;
     margin-left: 10px;
+    font-family: 'Azeret Mono', monospace;
 
 }
 
@@ -44,6 +47,7 @@ body{
     gap: 20px;
     border-radius: 25px;
     box-shadow: 10px 10px rgb(144, 227, 255);
+    font-family: 'Azeret Mono', monospace;
 }
 
 .textbox {
@@ -60,6 +64,8 @@ body{
 
 ::placeholder{
     color: purple;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 300;
 }
 
 .Admin {
@@ -84,6 +90,7 @@ body{
     transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
     margin-top: 250px;
     margin-bottom: 70px;
+    font-family: 'Azeret Mono', monospace;
 }
 
   /* Hover effect */

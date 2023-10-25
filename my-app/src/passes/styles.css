@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400&display=swap');
+
 body {
     background-color: rgb(180, 255, 180);
 }
@@ -6,7 +8,7 @@ body {
     margin: 1rem;
     grid-area: header;
     font-size: 4em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Azeret Mono', monospace;
     color: #210762;
     text-align: center;
 }
@@ -27,7 +29,7 @@ body {
 
 ::placeholder{
     color:rgb(255, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Azeret Mono', monospace;
     font-size: 1.5em;
     transform: translateX(10px);
 }
