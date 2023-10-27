@@ -1,0 +1,37 @@
+{
+    "destinations": [
+        {
+            "Bathrooms": [
+                {
+                    "location1": "Bathroom 1",
+                    "location2": "Bathroom 2",
+                    "location3": "Bathroom 3"
+                }
+            ]
+        },
+        {
+            "Staff": [
+                {
+                    "location1": "Lopez, Juan",
+                    "location2": "test, test",
+                    "location3": "Perez, Luis",
+                    "location4": "Novoa, Stephanie",
+                    "location5": "Vanessa, Laundrau",
+                    "location6": "Hazel, Valentine"
+                }
+            ]
+        },
+        {
+            "Other": [
+                {
+                    "location1": "Media Center",
+                    "location2": "Auditorium",
+                    "location3": "Lab",
+                    "location4": "Garden",
+                    "location5": "Gymnasiun",
+                    "location6": "Field"
+                }
+            ]
+        }
+    ]
+}
