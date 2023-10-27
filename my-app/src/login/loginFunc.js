@@ -14,44 +14,33 @@ fetch('../data/teacher.json').then(response => response.json()).then(data => {
 button.addEventListener("click", () => {
     let inputEmail = emailTextbox.value;
     let inputPass = passwordTextbox.value;
-    let emailInvalid = true;
-    let passInvalid = true;
-    let index = -1;
 
-    for (let i = 0; i < teacherJSON.teachers.length; i++) {
-        const email = teacherJSON.teachers[i].email;
-      
-        if (email === inputEmail) {
-            index = i;
-            emailInvalid = false;
-            break;
-        } else {
-            emailInvalid = true;
-        }
-    }
 
-    let pass = teacherJSON.teachers[index].pass;
+    let targetTeacher = findTeacherByEmail(inputEmail); // find teacher (thinking of expanding this method to include other identifiers for teachers, not just email)
+    let pass = targetTeacher.pass;
 
-    if (pass === inputPass) {
-        passInvalid = false;
-    } else {
-        passInvalid = true;
-    }
 
-    if (!(emailInvalid || passInvalid)){
-        window.location.href = "pass management/pass-management.html";
 
-        const teacherIndex = index.toString();
-
-        localStorage.setItem('active', teacherIndex);
-
-    } else {
+    if (!targetTeacher || pass !== inputPass)// fail state -- if a teacher is not found OR the pass is invalid
+    {
         alert("Invalid email or password");
         emailTextbox.value = "";
         emailTextbox.style.border = '1px solid red';
 
         passwordTextbox.value = "";
         passwordTextbox.style.border = '1px solid red';
+        return; //end function prematurely
     }
+
+    //success state
+    window.location.href = "pass management/pass-management.html";
+    let teacherID = targetTeacher.id;
+    localStorage.setItem('active', teacherID.toString());
 })
 
+function findTeacherByEmail(email)
+{
+    return teacherJSON.teachers.find((e) => (e.email === email)); // returns null..
+                                          //[        ^        ]
+                                          // if THIS ^ condition is not satisfied
+}

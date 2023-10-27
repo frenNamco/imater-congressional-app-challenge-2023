@@ -16,10 +16,8 @@ const teacherIndex = parseInt(localStorage.getItem("active"));
 
 let passes = {};
 
-if (localStorage.getItem("passes") === null) {
-    for (let i = 0; i < studentText.length; i++) {
-        studentText[i].textContent = "Create Pass";
-    }
+if (!localStorage.getItem("passes")) {
+    studentText.forEach((e) => { e.textContent = "Create Pass" });
 } else {
     passes = parseJSON(localStorage.getItem("passes"));
 }
@@ -39,8 +37,10 @@ roomCodeButton.addEventListener("click", () => {
     classPasses.style.display = "flex";
     
     localStorage.setItem(roomCode.toString(), teacherIndex.toString());
-    alert("Room code has been set: " + roomCode + "\n" + 
-    "by: " + teacherJSON.teachers[teacherIndex].name);
+
+    alert(
+    ```Room code has been set: ${roomCode}
+    by: ${teacherJSON.teachers[teacherIndex].name}```);
 })
 
 classPass1.addEventListener("click", () => {

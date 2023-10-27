@@ -28,29 +28,33 @@ iDButton.addEventListener("click", () => {
 
     let currentStudentName;
     let currentStudentID;
-    for (let i = 0; i < studentsList.length; i++) {
 
-        if (inputID === studentsList[i].id) {
-            currentStudentName = studentsList[i].name;
-            currentStudentID = studentsList[i].id;
+    studentsList.forEach((thisStudent) => {
+
+        const thisID = thisStudent.id;
+
+        if (inputID === thisID) {
+            currentStudentName = thisStudent.name;
+            currentStudentID = thisStudent.id;
 
             passCreatorDiv.style.display = "flex";
             nameText.textContent = "Pass for: " + currentStudentName;
 
             fillDropdown();
             
-            break;
+            return;
         }
         else {
             alert("Invalid ID");
-            break;
+            return;
         }
-    }
+    })
 })
 
 
-
+// what does this do
 function fillDropdown() {
+
     for (let i = 0; i < destinationsJSON.destinations.length; i++) {
         let option = document.createElement("option");
         option.text = Object.keys(destinationsJSON.destinations[i]);  
