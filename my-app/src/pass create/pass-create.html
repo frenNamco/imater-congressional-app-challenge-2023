@@ -28,33 +28,39 @@
     <div class="header-container">
 
       <div class="logo-container">
-        <img class="logo" src="../../assets/imgs/WillieTheElephant.jpeg">
+        <img class="logo" src="WillieTheElephant.jpeg">
       </div>
       
       <div class="name-container">
         <h1 class="name">Create Pass</h1>
       </div>
-      
+
     </div>  
 
-    <div id="welcome-subheadder">
-      <input id="inputIDText" type="text" name="input id" placeholder="Input ID"/>
 
-      <button id="inputIDButton">Enter</button>
+    <div id="container">
+      <div id="id-container">
+        <div id="welcome-subheadder">
+          <input id="inputIDText" type="text" name="input id" placeholder="Input ID"/>
+    
+          <button id="inputIDButton">Enter</button>
+        </div>
+      </div>
+      <div id="pass-creator-container">
+        <div id="pass-creator">
+          <p id="student-name">Pass for: [Student Name]<br><br>from:[Room number]</p>
+          <label for="destination-dropdown">to:</label>
+          <select id="destination-dropdown">
+            <option value="" selected>Select a destination</option>
+          </select>
+          <select id="specific-destination-dropdown">
+            <option value="" disabled selected>Select a destination</option>
+          </select>
+          <button id="create-pass-button">Create Pass</button>
+        </div>
+      </div>
     </div>
 
-    <div id="pass-creator">
-      <p id="student-name">Pass for: [Student Name]<br>from:[Room number]</p>
-      <label for="destination-dropdown">to:</label>
-      <select id="destination-dropdown">
-        <option value="" selected>Select a destination</option>
-      </select>
-      <select id="specific-destination-dropdown">
-        <option value="" disabled selected>Select a destination</option>
-      </select>
-      <button id="create-pass-button">Create Pass</button>
-    </div>
-   
     <script src="passCreateFunc.js"></script>
   </body>
 </html>

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400&display=swap');
+
 body{
     background-color: pink;
+    font-family: 'Azeret Mono', monospace;
 }
 
 .header-container{
@@ -11,35 +14,120 @@ body{
 .name {
     text-align: center;
     color: #3498db;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 10px;
+    margin-top: 45px;
+    font-family: 'Azeret Mono', monospace;
 
 }
 
 .logo{
-    width: 100px;
-    border: 4px solid black;
+    width: 130px;
+    border: 4px solid #f6c3bf;
     border-radius: 100px;
 }
 
-#pass-creator {
-    display: none;   
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+#id-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(17, 28, 144);
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: 10px 10px rgb(144, 227, 255);
+}
+
+
+#inputIDText{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    font-size: 15px;
+    width: 150px;
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 18px;
+    background-color: #2980b9;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: black;
+}
+
+#inputIDButton{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    width: 80px;
+    height: 48px;
+    border-radius: 18px;
+    background-color: #2980b9;
+    font-family: 'Azeret Mono', monospace;
+    color: black;
+    font-weight: 300;
+
+}
+
+#pass-creator-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(17, 28, 144);
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: 10px 10px rgb(144, 227, 255);
+}
+
+#pass-creator{
+    display: flex;   
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     margin: 0px 500px;
+    align-items: center;
 }
 
 #student-name {
     flex: auto;
     text-align: center;
+    width: 300px;
+    font-size: 20px;
+    color: rgb(144, 227, 255);;
 }
 
-#location-dropdown, #specific-location-dropdown {
-    width: auto;
-    height: 30px;   
+#destination-dropdown, #specific-destination-dropdown {
+    width: 250px;
+    height: 40px;   
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(144, 227, 255);
+    font-size: 15px;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 300;
 }
- 
+
+#create-pass-button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 12px;
+    border: solid;
+    border-color: rgb(144, 227, 255);
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 300;
+}
 
 
 

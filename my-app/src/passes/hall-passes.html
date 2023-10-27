@@ -27,7 +27,13 @@
   <body>
 
     <div class="header-grid-container">
-      <h1 class="name">Hall Passes</h1>
+      <div class="logo-container">
+        <img class="logo" src="WillieTheElephant.jpeg">
+      </div>
+
+      <div class="name-container">
+        <h1 class="name">Hall Passes</h1>
+      </div>
 
       <input type="text" class="pass-textbox" id="pass-textbox" placeholder="Enter Class ID Here"/>
       <button id="enter-button">Enter</button>
@@ -35,20 +41,28 @@
 
     <h3 id="teacher-name" style="display: none;">[Teacher]'s class</h3>
 
-    <div class="passes-grid-container">
-        <div class="passes-grid-row-1">
-          <div class="pass-item-1"></div>
-          <div class= "pass-item-2"></div>
-          <div class="pass-item-3"></div>
+    <div id="passes">
+
+      <div class="pass-container">
+        <div class="student-pass-container" id="pass-1">
+        </div>
+  
+        <div class="student-pass-container" id="pass-2">
+        </div>
+  
+        <div class="student-pass-container" id="pass-3">
+        </div>
+  
+        <div class="student-pass-container" id="pass-4">
         </div>
 
-        <div class="passes-grid-row-2">
-          <div class="pass-item-4"></div>
-          <div class="pass-item-5"></div>
-          <div class="pass-item-6"></div>  
+        <div class="student-pass-container" id="pass-5">
         </div>
-        
-        
+  
+        <div class="student-pass-container" id="pass-6">
+
+        </div>  
+      </div>
     </div>
     
     <script src="passFunc.js"></script>
