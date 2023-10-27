@@ -1,0 +1,26 @@
+{
+    "destinations": 
+    {
+        "Bathrooms": [
+            "Bathroom 1",
+            "Bathroom 2",
+            "Bathroom 3"
+        ],
+        "Staff": [
+            "Lopez, Juan",
+            "test, test",
+            "Perez, Luis",
+            "Novoa, Stephanie",
+            "Vanessa, Laundrau",
+            "Hazel, Valentine"
+        ],
+        "Other": [
+            "Media Center",
+            "Auditorium",
+            "Lab",
+            "Garden",
+            "Gymnasiun",
+            "Field"
+        ]
+    }
+}
