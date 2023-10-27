@@ -46,8 +46,12 @@
     <div id="pass-creator">
       <p id="student-name">Pass for: [Student Name]<br>from:[Room number]</p>
       <label for="destination-dropdown">to:</label>
-      <select id="destination-dropdown"></select>
-      <select id="specific-destination-dropdown"></select>
+      <select id="destination-dropdown">
+        <option value="" selected>Select a destination</option>
+      </select>
+      <select id="specific-destination-dropdown">
+        <option value="" disabled selected>Select a destination</option>
+      </select>
       <button id="create-pass-button">Create Pass</button>
     </div>
    
