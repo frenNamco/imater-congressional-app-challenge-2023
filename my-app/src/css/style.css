@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400&display=swap');
 
 body{
-  background-color: rgb(243, 178, 178);
+  background-color: #6183a7;
 }
 
 .willie{
   width: 28%;
   border-radius: 100%;
-  border: 5px solid #073e62;
+  border: 5px solid #e67f88;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation-duration: .9s;
+  animation-name: zoomIn; 
 }
 
 .name {
@@ -20,6 +22,9 @@ body{
   font-size: 3.2em;
   font-family: 'Azeret Mono', monospace;
   color: #073e62;
+  animation-name: slideFromTop;
+  animation-duration: .9s;
+
 }
 
 .start-button-container{
@@ -28,11 +33,12 @@ body{
   align-items: center;
   height: 20vh;
   margin-bottom: 20px;
+  
 }
 
 #start-button {
-  background-color: #073e62; /* Background color */
-  color: #fff; /* Text color */
+  background-color: #e67f88; /* Background color */
+  color: #E6E1D1; /* Text color */
   font-size: 1.9rem; /* Font size */
   font-family: 'Azeret Mono', monospace;
   padding: 1.5rem 6rem; /* Padding */
@@ -45,7 +51,7 @@ body{
 
 /* Hover effect */
 #start-button:hover {
-  background-color: #0c6fb0; /* Darker background color on hover */
+  background-color: #073e62; /* Darker background color on hover */
   transform: scale(1.05); /* Slightly scale up on hover */
 }
 
@@ -63,8 +69,43 @@ body{
 }
 
 a{
-  color: black;
+  color: #073e62 ;
 }
 
+@keyframes slideFromTop{
+
+  0%{
+    transform: translateY(-250px);
+    
+  }
+
+  75%{
+    transform: translateY(20px);
+
+  }
+
+  100% {
+    transform: translateY(0px);
+    
+  }
 
 
+}
+
+@keyframes zoomIn{
+
+  0%{
+    transform: scale(40%);
+    
+  }
+
+  75%{
+    transform: scale(105%);
+
+  }
+
+  100% {
+    transform: scale(100%);
+    
+  }
+}
