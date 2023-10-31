@@ -15,6 +15,8 @@ body{
     width: 130px;
     border: 4px solid #e67f88;
     border-radius: 300px;
+    animation-name: slideFromLeftLogo;
+    animation-duration: 1s;
 }
 
 .name-container{
@@ -26,7 +28,8 @@ body{
     color: #e67f88;
     font-size: 30px;
     margin-top: 45px;
-    
+    animation-name: slideFromLeftText;
+    animation-duration: 1s;
 }
 
 
@@ -104,4 +107,30 @@ body{
 #login-button:hover {
     background-color: #2980b9; /* Darker background color on hover */
     transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+@keyframes slideFromLeftLogo {
+    
+    0%{
+        transform: translateX(-200px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideFromLeftText {
+    
+    0%{
+        transform: translateX(-400px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }

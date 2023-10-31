@@ -15,6 +15,8 @@ body {
     width: 130px;
     border: 4px solid #e67f88;
     border-radius: 300px;
+    animation-name: slideFromLeftLogo;
+    animation-duration: 1s;
 }
 
 .name {
@@ -23,6 +25,8 @@ body {
     font-size: 30px;
     margin-left: 10px;
     margin-top: 45px;
+    animation-name: slideFromLeftText;
+    animation-duration: 1s;
 }
 
 .pass-textbox {
@@ -43,6 +47,7 @@ body {
     padding-bottom: 15px;
     text-align: center;
     font-family: 'Azeret Mono', monospace;
+    color:#073e62;
 }
 
 #enter-button {
@@ -58,6 +63,11 @@ body {
     background-color: rgba(255, 0, 0, 0);
     font-family: 'Azeret Mono', monospace;
     font-weight: 300;
+    color:#e67f88;
+}
+
+#enter-button:hover{
+    transform: scale(1.1);
 }
 
 ::placeholder{
@@ -66,18 +76,26 @@ body {
     font-size: 15px;
 }
 
+h3{
+    color: #073e62;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .student-pass-container{
     font-family: 'Azeret Mono', monospace;
-    color: #7bd1ce;
+    color: #073e62;
     font-weight: 300;
     width: 300px;
     height: 250px;
     font-size: 20px;
     text-align: center;
-    background-color: rgb(255, 255, 255,1);
+    background-color: #eceae3;
     border-radius: 20px;
     margin: 30px;
     margin-top: 0px;
+    animation-name: slideFromBottom;
+    animation-duration: 1s;
 }
 
 
@@ -98,7 +116,7 @@ body {
     gap: 11px;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #5087be;
+    background-color: #073e62;
     border-radius: 10px;
     padding-top: 80px;
     padding-bottom: 70px;
@@ -115,8 +133,43 @@ body {
     margin-top: 20px;
 }
 
+@keyframes slideFromLeftLogo {
+    
+    0%{
+        transform: translateX(-200px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 
+@keyframes slideFromLeftText {
+    
+    0%{
+        transform: translateX(-400px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 
+@keyframes slideFromBottom {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 
 

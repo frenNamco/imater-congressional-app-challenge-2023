@@ -5,6 +5,7 @@ const passCreatorDiv = document.getElementById("pass-creator");
 const destinationDropdown = document.getElementById("destination-dropdown");
 const specDestinationDropdown = document.getElementById("specific-destination-dropdown");
 const passButton = document.getElementById("create-pass-button");
+const passContainer = document.getElementById("pass-creator-container");
 
 //Location where the pass will be displayed
 const passLocation = parseInt(localStorage.getItem("location"));
@@ -42,6 +43,7 @@ iDButton.addEventListener("click", () => {
                 currentStudentID = studentsList[i].id;
     
                 passCreatorDiv.style.display = "flex";
+                passContainer.classList.toggle("slideFromBottom");    //activates css animation
                 nameText.textContent = "Pass for: " + currentStudentName + "\n from: Room " + roomCode;
     
                 fillDropdown();
