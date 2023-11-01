@@ -38,5 +38,18 @@
       <a id="login" href="login/login.html">Admin & Faculty Login</a>
     </div>
     
+
+    <button onclick="deleteLocalStorage()">Delete local storage</button>
+    
+    <script type="text/javascript">
+      function deleteLocalStorage() {
+        localStorage.clear();
+
+        if (localStorage.length === 0) {
+          console.log("Local Storage is clear");
+        }
+      }
+
+    </script>
   </body>
 </html>

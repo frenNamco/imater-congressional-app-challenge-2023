@@ -3,16 +3,16 @@
     "students": 
     [
         {
-            "name": "Student 1",
-            "id": "1"
+            "name": "Fernando Aragon",
+            "id": "0756062"
         },
         {
-            "name": "Student 2",
-            "id": "2"
+            "name": "Juan Aragon",
+            "id": "0756074"
         },
         {
-            "name": "Student 3",
-            "id" : "3" 
+            "name": "Adriana Gil",
+            "id" : "0505824" 
         }
     ]
 }

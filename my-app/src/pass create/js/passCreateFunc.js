@@ -44,7 +44,7 @@ iDButton.addEventListener("click", () => {
     
                 passCreatorDiv.style.display = "flex";
                 passContainer.classList.toggle("slideFromBottom");    //activates css animation
-                nameText.textContent = "Pass for: " + currentStudentName + "\n from: Room " + roomCode;
+                nameText.innerHTML = "Pass for: " + currentStudentName + "<br>from: Room " + roomCode;
     
                 fillDropdown();
                 

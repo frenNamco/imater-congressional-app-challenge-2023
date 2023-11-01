@@ -14,6 +14,20 @@
             ]
         },
         {
+            "Vending Machines": [
+                {
+                    "location": "Vending Machine 1"
+                },
+                {
+                    "location": "Vending Machine 2"
+                },
+                {
+                    "location": "Vending Machine 3"
+                }
+
+            ]
+        },
+        {
             "Staff": [
                 {
                     "location": "Lopez, Juan"
